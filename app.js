@@ -66,3 +66,58 @@ if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
     console.log("It's not a leap year.")
 }
 
+// Type Coerction
+
+console.log(100 + 10);
+console.log(10 + "100");
+console.log(10 - "10");
+console.log(10 * "100");
+console.log(10 / "100");
+console.log(10 % "100");
+console.log(10 ** "100");
+console.log("Tahia" + "Bushra");
+
+// Switch Case
+
+const mark = 75;
+switch (true) {
+    case mark >= 80:
+        console.log("A+");
+        break;
+    case mark >= 70:
+        console.log("A");
+        break;
+    case mark >= 60:
+        console.log("A-");
+        break;
+    case mark >= 50:
+        console.log("B");
+        break;
+    case mark >= 40:
+        console.log("C");
+        break;
+    case mark >= 33:
+        console.log("D");
+        break;
+    default:
+        console.log("F");
+}
+
+// Switch Case - Example:2
+
+const day = "Friday";
+switch (day) {
+    case "Sunday":
+    case "Monday":
+    case "Tuesday":
+    case "Wednesday":
+    case "Thursday":
+        console.log("Working Day");
+        break;
+    case "Friday":
+    case "Saturday":
+        console.log("It's holiday.");
+        break;
+    default:
+        console.log("Invalid day.");
+}
