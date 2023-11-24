@@ -54,16 +54,16 @@ const relativeOfGoverment = true;
 if ((yourAge <= 35 && bribe >= 500000) || relativeOfGoverment) {
     console.log("You will get government job.");
 } else {
-    console.log("You won't get government job")
+    console.log("You won't get government job");
 }
 
 // Operators (&&  || ) - Example : 2
 
 const year = 2023;
 if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    console.log("It's a leap year.");
+    console.log(`${year} is a leap year.`);
 } else {
-    console.log("It's not a leap year.")
+    console.log(`${year} it's not a leap year.`);
 }
 
 // Type Coerction
@@ -121,3 +121,16 @@ switch (day) {
     default:
         console.log("Invalid day.");
 }
+
+// Ternery Operator
+
+const teamA = 3;
+const teamB = 5;
+const winner = teamA > teamB ? "teamA" : "teamB";
+console.log(winner);
+
+// Ternery Operator - Example:2
+
+const digit = 20;
+const result = digit % 2 === 0 ? "Even" : "Odd";
+console.log(result);
